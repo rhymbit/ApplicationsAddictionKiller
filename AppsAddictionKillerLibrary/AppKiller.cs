@@ -35,7 +35,7 @@ namespace AppsAddictionKillerLibrary
 
         // Logs Folder and File Path
         static readonly string _logsFolderPath = Combine(
-                GetFolderPath(SpecialFolder.MyDocuments), "AppsAddictionKillerLogs");
+                GetFolderPath(SpecialFolder.LocalApplicationData), "AppsAddictionKillerLogs");
         internal static readonly string _logsFilePath = Combine(
                 _logsFolderPath, "logs.json");
 
