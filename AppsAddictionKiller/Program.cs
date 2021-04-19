@@ -7,9 +7,20 @@ namespace AppsAddictionKiller
     {
         static void Main(string[] args)
         {
-            var _ = new AppKiller();
-            var logsManager = new LogsManager();
-            logsManager.ReadInputLogs();
+            // Parse CLI args, start timers for each app, sleep until each timer runs out,
+            // dispose timers.
+
+            var IpOpLogsReader = new LogsManager();
+            IpOpLogsReader.ReadInputLogs();
+
+            CLIParser.ParseCLIArguments(args);
+            var appKiller = new AppKiller();
+            appKiller.RunTimers();
+
+            IpOpLogsReader.WriteOutputLogs();
+
+            System.Threading.Thread.Sleep((int)AppKiller.TimerMaxRunTime + 1000);
+            appKiller.DisposeTimers();
         }
     }
 }

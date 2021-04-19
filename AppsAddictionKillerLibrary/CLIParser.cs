@@ -43,6 +43,8 @@ namespace AppsAddictionKillerLibrary
                         throw new ArgumentException();
                     }
                 }
+                // Converting 'minutes' to 'milliseconds' for System.Timers.Timer
+                AppKiller.TimerMaxRunTime = AppKiller.TimerMaxRunTime * 60 * 1000;
             }
             catch (ArgumentException e)
             {
