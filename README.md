@@ -17,7 +17,7 @@ If you're addicted to some video game or some social media application, this app
     amount of time in _minutes_ that this app would be allowed to run and '**cooldownTime1**' is the amount of time in _minutes_
     this app would not be allowed to run after its **useTime1** would've expired.
   * Same applies for the second '**app2**' and its '**useTime2**' and '**cooldownTime2**'
-  * Read [this](https://github.com/prateek332/ApplicationsAddictionKiller/new/main?readme=1#important) before proceeding.
+  * Read [this](https://github.com/prateek332/ApplicationsAddictionKiller#important) before proceeding.
   * **Here's a simple example :-**
     `/AppsAddictionKiller.exe msedge 20 10 gta5 30 20`, here '**Microsoft Edge**' would be allowed to run for 20 minutes at a time,
     after which it wouldn't be allowed to run for following 10 minutes. '**gta5**' would be allowed to run for 30 minutes, after which
